@@ -1,0 +1,10 @@
+^C:\USERS\4817M\STEP2APP\BUILD\WINDOWS\X64\CMAKEFILES\DE3AB1EEB915A7B511086B41C0BF5483\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/4817m/step2app/windows -BC:/Users/4817m/step2app/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/4817m/step2app/build/windows/x64/step2app.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
